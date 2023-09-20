@@ -17,7 +17,9 @@
     </div>
     <Transition name="fade">
       <div
-        @click="!interactive && closePopper()"
+        @click="
+          closeOnClickPopper ? closePopper() : !interactive && closePopper()
+        "
         v-show="shouldShowPopper"
         class="popper"
         ref="popperNode"
@@ -173,6 +175,13 @@
       type: String,
       default: null,
     },
+    /**
+     * Close popper when clicking on popper content
+     */
+    closeOnClickPopper: {
+      type: Boolean,
+      default: false,
+    },
   });
 
   const popperContainerNode = ref(null);
@@ -194,6 +203,7 @@
     arrowPadding,
     closeDelay,
     content,
+    closeOnClickPopper,
     disableClickAway,
     disabled,
     interactive,
@@ -300,7 +310,7 @@
   });
 </script>
 
-<style>
+<style scoped>
   .inline-block {
     display: inline-block;
   }
