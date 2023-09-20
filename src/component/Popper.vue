@@ -300,16 +300,16 @@
   });
 </script>
 
-<style scoped>
+<style>
   .inline-block {
     display: inline-block;
   }
   .popper {
     transition: background 250ms ease-in-out;
-    background: var(--popper-theme-background-color);
-    padding: var(--popper-theme-padding);
-    color: var(--popper-theme-text-color);
-    border-radius: var(--popper-theme-border-radius);
+    background: var(--popper-theme-background-color, #11253e);
+    padding: var(--popper-theme-padding, 8px 12px);
+    color: var(--popper-theme-text-color, #fff);
+    border-radius: var(--popper-theme-border-radius, 4px);
     border-width: var(--popper-theme-border-width);
     border-style: var(--popper-theme-border-style);
     border-color: var(--popper-theme-border-color);
@@ -319,7 +319,7 @@
 
   .popper:hover,
   .popper:hover > #arrow::before {
-    background: var(--popper-theme-background-color-hover);
+    background: var(--popper-theme-background-color-hover, #11253e);
   }
 
   .inline-block {

@@ -10,7 +10,7 @@
     width: calc(10px - var(--popper-theme-border-width, 0px));
     height: calc(10px - var(--popper-theme-border-width, 0px));
     box-sizing: border-box;
-    background: var(--popper-theme-background-color);
+    background: var(--popper-theme-background-color, #11253e);
   }
 
   #arrow {
