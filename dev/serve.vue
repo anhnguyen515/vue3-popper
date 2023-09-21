@@ -3,7 +3,9 @@
     <Popper arrow hover placement="bottom">
       <button>Hover me!</button>
       <template #content>
-        <div>This is the content</div>
+        <div>
+          This is the content
+        </div>
       </template>
     </Popper>
   </div>
