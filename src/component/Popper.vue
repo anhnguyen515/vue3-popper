@@ -326,22 +326,21 @@
   }
   .popper {
     transition: background 250ms ease-in-out;
-    background: var(--popper-theme-background-color, #11253e);
-    padding: var(--popper-theme-padding, 8px 12px);
-    color: var(--popper-theme-text-color, #fff);
-    border-radius: var(--popper-theme-border-radius, 4px);
+    background: var(--popper-theme-background-color);
+    padding: var(--popper-theme-padding);
+    color: var(--popper-theme-text-color);
+    border-radius: var(--popper-theme-border-radius);
     border-width: var(--popper-theme-border-width);
     border-style: var(--popper-theme-border-style);
     border-color: var(--popper-theme-border-color);
     box-shadow: var(--popper-theme-box-shadow);
-    max-width: var(--popper-max-width, 168px);
     width: max-content;
     z-index: v-bind(zIndex);
   }
 
   .popper:hover,
   .popper:hover > #arrow::before {
-    background: var(--popper-theme-background-color-hover, #11253e);
+    background: var(--popper-theme-background-color-hover);
   }
 
   .inline-block {
