@@ -1,25 +1,7 @@
 <template>
   <div id="app">
-    <Popper arrow closeOnClickPopper>
-      <button>This one close on click</button>
-      <template #content>
-        <div>This is the content</div>
-      </template>
-    </Popper>
-    <Popper arrow placement="top">
-      <button>Click this</button>
-      <template #content>
-        <div>This is the content</div>
-      </template>
-    </Popper>
-    <Popper arrow placement="left">
-      <button>Click this</button>
-      <template #content>
-        <div>This is the content</div>
-      </template>
-    </Popper>
-    <Popper arrow placement="right">
-      <button>Click this</button>
+    <Popper arrow hover placement="bottom">
+      <button>Hover me!</button>
       <template #content>
         <div>This is the content</div>
       </template>
